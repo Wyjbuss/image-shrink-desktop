@@ -1,0 +1,16 @@
+{
+  "name": "image-shrink",
+  "version": "1.0.0",
+  "description": "A desktop app that takes an image and shrinks the file size",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron ."
+  },
+  "author": "Wyatt Bussell",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "nodemon": "^2.0.7"
+  }
+}
