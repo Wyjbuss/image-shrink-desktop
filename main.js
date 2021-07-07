@@ -26,7 +26,7 @@ function createWindow () {
 app.on('ready', ()=>{
     createWindow()
     const mainMenu = Menu.buildFromTemplate(menu)
-    //Menu.setApplicationMenu(mainMenu)
+    Menu.setApplicationMenu(mainMenu)
     win.on('closed',()=> win = null)
 })
 
@@ -39,6 +39,7 @@ const menu = [
         submenu:[
             {
                 label:"Quit",
+                accelerator: isMac?"Command+q":"Ctrl+q",
                 click: ()=>app.quit()
             }
         ]
